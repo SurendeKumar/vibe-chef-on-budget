@@ -1,0 +1,121 @@
+{
+  "version": 4,
+  "project": {
+    "catalog": "prod",
+    "initializedAt": "2026-11-11T12:29:19.992Z",
+    "merchantDisplayName": null,
+    "merchantId": "acct_1UaYyNEbPSsKJC3r",
+    "projectId": "project_61VjybFeu8fQdW2D116VjwvjPIGCddvhYaB0pwEzgDey",
+    "projectName": "mood-meal"
+  },
+  "providers": {
+    "openrouter": {
+      "accountRequestId": "facctrq_61VjylzGESI9SKrUl16VjwvjPIGCddvhYaB0pwEzgKh6",
+      "configuration": {},
+      "linkedAt": "2026-11-11T12:40:28.900Z",
+      "providerId": "prvdr_61URImmFACEuDHEx651IO",
+      "providerName": "OpenRouter",
+      "redirectUrl": null,
+      "requestedAt": "2026-11-11T12:40:26.248Z",
+      "status": "complete"
+    },
+    "supabase": {
+      "accountRequestId": "fprvcnn_61VjykoGy9zaYcyEu16VjwvjPIGCddvhYaB0pwEzgUkK",
+      "configuration": {},
+      "linkedAt": "2026-11-11T12:38:38.791Z",
+      "providerId": "prvdr_61UIXYHdsyF69pZbG52n2",
+      "providerName": "Supabase",
+      "redirectUrl": null,
+      "requestedAt": "2026-11-11T12:38:38.791Z",
+      "status": "complete"
+    },
+    "vercel": {
+      "accountRequestId": "facctrq_61VjzDFjD2893nEuq16VjwvjPIGCddvhYaB0pwEzg9vs",
+      "configuration": {},
+      "linkedAt": "2026-11-11T13:08:42.178Z",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "redirectUrl": null,
+      "requestedAt": "2026-11-11T13:08:36.934Z",
+      "status": "complete"
+    }
+  },
+  "resources": {
+    "mood-meal-ai": {
+      "configuration": {},
+      "createdAt": "2026-11-11T12:40:39.293Z",
+      "lastRevealedAt": "2026-11-11T12:40:39.589Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "mood-meal-ai",
+      "providerId": "prvdr_61URImmFACEuDHEx651IO",
+      "providerName": "OpenRouter",
+      "resourceId": "fres_61VjymA6hutBDONmg16VjwvjPIGCddvhYaB0pwEzg6D2",
+      "serviceId": "api"
+    },
+    "mood-meal-db": {
+      "configuration": {
+        "name": "mood-meal"
+      },
+      "createdAt": "2026-11-11T12:40:18.449Z",
+      "lastRevealedAt": "2026-11-11T12:51:45.938Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "mood-meal-db",
+      "providerId": "prvdr_61UIXYHdsyF69pZbG52n2",
+      "providerName": "Supabase",
+      "resourceId": "fres_61VjylaBE4wFKfq6r16VjwvjPIGCddvhYaB0pwEzg6E4",
+      "serviceId": "project"
+    },
+    "openrouter-plan": {
+      "configuration": {},
+      "createdAt": "2026-11-11T12:40:30.816Z",
+      "lastRevealedAt": "2026-11-11T12:40:31.121Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "openrouter-plan",
+      "providerId": "prvdr_61URImmFACEuDHEx651IO",
+      "providerName": "OpenRouter",
+      "resourceId": "fres_61Vjym2ikjwmR6Gol16VjwvjPIGCddvhYaB0pwEzgP32",
+      "serviceId": "free"
+    },
+    "supabase-plan": {
+      "configuration": {},
+      "createdAt": "2026-11-11T12:39:54.165Z",
+      "lastRevealedAt": "2026-11-11T12:39:54.427Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "supabase-plan",
+      "providerId": "prvdr_61UIXYHdsyF69pZbG52n2",
+      "providerName": "Supabase",
+      "resourceId": "fres_61VjylCGk1fjgVZtL16VjwvjPIGCddvhYaB0pwEzgVZw",
+      "serviceId": "free"
+    },
+    "vercel-plan": {
+      "configuration": {},
+      "createdAt": "2026-11-11T13:08:43.098Z",
+      "lastRevealedAt": "2026-11-11T13:08:43.442Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "vercel-plan",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "resourceId": "fres_61VjzDLtdMIxCHBir16VjwvjPIGCddvhYaB0pwEzgFgu",
+      "serviceId": "hobby"
+    },
+    "vibe-chef-on-budget": {
+      "configuration": {
+        "name": "mood-meal"
+      },
+      "createdAt": "2026-11-11T13:09:02.520Z",
+      "lastRevealedAt": "2026-11-11T13:09:02.855Z",
+      "lastStatus": "complete",
+      "livemode": true,
+      "name": "vibe-chef-on-budget",
+      "providerId": "prvdr_61ULUAr4zlQgZkvXY5LsG",
+      "providerName": "Vercel",
+      "resourceId": "fres_61VjzDf5CJvAt9Tfq16VjwvjPIGCddvhYaB0pwEzgMyG",
+      "serviceId": "project"
+    }
+  }
+}
