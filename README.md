@@ -3,6 +3,8 @@
 Tell it your **mood** and your **budget** — it tells you what to eat, with
 an estimated cost per meal.
 
+**Live app:** https://mood-meal-surenderkumar-1001-stripe.vercel.app
+
 > Stripe project name: `mood-meal` (backend identifier only — see
 > [Project naming](#project-naming) below).
 
@@ -105,17 +107,30 @@ scripts/migrate.mjs         # applies sql/schema.sql
 hand-edit it. See [`ENV_VARS.md`](./ENV_VARS.md) for the variable reference,
 and run `stripe projects env --pull` any time you need to resync it.
 
-## Deploying (for leaderboard submission)
+## Deploying
 
-This project is provisioned for Vercel's free tier via Stripe Projects. Once
-code is pushed to a Git repository:
+Already deployed to Vercel's free tier via Stripe Projects — see the live
+link above. To redeploy after making changes:
 
 ```bash
-stripe projects add vercel/hobby --accept-tos --yes
-stripe projects add vercel/project --accept-tos --yes
+npm install -g vercel   # once
+
+# Export credentials from .env, then deploy (never pass tokens as flags):
+eval "$(node --env-file=.env -e "
+for (const k of ['VERCEL_TOKEN','VERCEL_ORG_ID','VERCEL_PROJECT_ID']) {
+  console.log('export ' + k + '=' + JSON.stringify(process.env[k]));
+}
+")"
+vercel deploy --prod --scope surenderkumar-1001-stripe -y
 ```
 
-Follow the CLI prompts to link the GitHub repo for automatic deployments.
+Git-based auto-deploy isn't connected yet — `vercel git connect` requires a
+GitHub login connection on the Vercel account first (one-time setup, see
+[Vercel's login methods docs](https://vercel.com/docs/accounts/create-an-account#login-methods-and-connections)).
+Until then, redeploy manually with the command above after pushing.
+
+Note: the deployment's "Vercel Authentication" (SSO) protection was
+disabled so the app is publicly viewable without a Vercel login.
 
 ## Project naming
 
