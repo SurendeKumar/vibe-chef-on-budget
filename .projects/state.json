@@ -1,0 +1,52 @@
+{
+  "version": 2,
+  "providers": {
+    "openrouter": {
+      "name": "OpenRouter"
+    },
+    "supabase": {
+      "name": "Supabase"
+    },
+    "vercel": {
+      "name": "Vercel"
+    }
+  },
+  "resources": {
+    "mood-meal-ai": {
+      "livemode": true,
+      "name": "mood-meal-ai",
+      "providerName": "OpenRouter",
+      "serviceId": "api"
+    },
+    "mood-meal-db": {
+      "livemode": true,
+      "name": "mood-meal-db",
+      "providerName": "Supabase",
+      "serviceId": "project"
+    },
+    "openrouter-plan": {
+      "livemode": true,
+      "name": "openrouter-plan",
+      "providerName": "OpenRouter",
+      "serviceId": "free"
+    },
+    "supabase-plan": {
+      "livemode": true,
+      "name": "supabase-plan",
+      "providerName": "Supabase",
+      "serviceId": "free"
+    },
+    "vercel-plan": {
+      "livemode": true,
+      "name": "vercel-plan",
+      "providerName": "Vercel",
+      "serviceId": "hobby"
+    },
+    "vibe-chef-on-budget": {
+      "livemode": true,
+      "name": "vibe-chef-on-budget",
+      "providerName": "Vercel",
+      "serviceId": "project"
+    }
+  }
+}

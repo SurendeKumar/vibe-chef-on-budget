@@ -66,3 +66,4 @@ For the complete documentation in a single file, see [Full Documentation](https:
 
 - [Supabase Management API OpenAPI spec](https://supabase.com/openapi.json): OpenAPI 3.0 description of the Management API for managing organizations, projects, branches, and configuration
 - [Supabase MCP server](https://mcp.supabase.com/mcp): Streamable HTTP MCP endpoint, OAuth-protected, for managing projects, database schema, and queries from MCP clients
+- [Report documentation problems](https://supabase.com/docs/guides/ai-tools/agent-feedback.md): How agents report a Supabase documentation page that is wrong, outdated, or missing information, with the user's approval
